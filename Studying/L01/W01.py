@@ -27,7 +27,7 @@ print(list[len(list)//2 + 1]) # середина списку
 
 print(list)
 
-del list[0]# delistete 1st in listist
+del list[0]# delete 1st in listist
 
 a = list.pop(0)# delistete and write 1st in listist to var
 print(a)
