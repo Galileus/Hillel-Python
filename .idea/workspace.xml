@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea15f13f-2eee-4924-8bd8-bcdf23a9a2f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/PycharmProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PycharmProjects.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studying/L01/W01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Studying/L01/W01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Studying/L01/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Studying/L01/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
