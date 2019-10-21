@@ -118,34 +118,21 @@
 #         print(c*(-1), 'c')
 #         print('try again')
 
-
-
 #
 # 6.Дано три числа. Знайти суму двох найбільших з них.
-
-a = int(input('enter a number -'))
-b = int(input('enter a number -'))
-c = int(input('enter a number -'))
-
-
-if a > b or a > c:
-    res = a
-
-if b > c or b > a:
-    res_1 = b
-
-if c > a or c > b:
-    res_1 = c
-else:
-    print('smt went wrong')
-    res =
-
-print(res, 'res')
-print(res_1, 'res_1')
-sum = res + res_1
-print(sum, 'sum')
-
-
-
+# a = 56
+# b = 2
+# c = 6
+# res = 0
 #
+# if a > b or a > c:
+#     res = res + a
+# if b > c or b > a:
+#     res = res + b
+# if c > a or c > b:
+#     res = res + c
+#
+# print(res, 'res')
+
+
 # 7.Розв'язати квадратне рівняння ( пояснював на зайнятті )
