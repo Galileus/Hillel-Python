@@ -27,18 +27,18 @@ print(list[len(list)//2 + 1]) # середина списку
 
 print(list)
 
-del list[0]# delete 1st in listist
+del list[0]# delete 1st in list
 
-a = list.pop(0)# delistete and write 1st in listist to var
+a = list.pop(0)# delete and write 1st in list to var
 print(a)
 
-print(list)#new listist
+print(list)#new list
 
-list.append(333)#addint to listist
-print(list)#new listist
+list.append(333)#add to list
+print(list)#new list
 
-list.insert(0, 234)# adding to listist(index, object)
-print(list)#new listist
+list.insert(0, 234)# adding to list(index, object)
+print(list)#new list
 
 print(list[2:4])# cutting from 2 to 4 obj
 
@@ -46,7 +46,7 @@ print(list[2:-2])# cutting from 2 to 2nd from the end obj
 
 print(list[:4])#cutting from the start to 4th obj
 
-print(list, ' - new listist')
+print(list, ' - new list')
 
 
 print(list[:6])#cutting from the start to 4th obj
@@ -61,7 +61,7 @@ print(list[1::2])# unpair elistements
 print(list[::-1])# unpair elistements revers
 
 
-list.remove[3]
+list.remove[234]
 print(list, 'elistem')
 
 

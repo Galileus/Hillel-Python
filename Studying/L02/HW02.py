@@ -136,3 +136,25 @@
 
 
 # 7.Розв'язати квадратне рівняння ( пояснював на зайнятті )
+
+import math
+
+print('Enter the coefficient of equation "a, b, c"')
+
+a = float(input('enter a coefficient a -'))
+b = float(input('enter a coefficient b -'))
+c = float(input('enter a coefficient c -'))
+
+d = b ** 2 - 4 * a * c
+print('discriminant = ', d)
+if d > 0:
+	x1 = (-b + math.sqrt(d)) / (2 * a)
+	x2 = (-b - math.sqrt(d)) / (2 * a)
+	print(x1, 'x1')	
+	print(x2, 'x2')
+elif d == 0:
+	x = -b /(2 * a)
+	print(x, 'x')
+else:
+	print('no roots')
+		

@@ -1,37 +1,37 @@
-# # tup = (1, 2, 4, 5, 7)
-# # print(tup[1:])
-# #
-# # children_1 = {
-# #     "name": 'Max',
-# #     "age": 2,
-# #     "sex": 'Male',
-# # }
-# #
-# # children_2 = {
-# #     "name": 'Tom',
-# #     "age": 12,
-# #     "sex": 'Male',
-# # }
-# #
-# # person = {
-# #     "name": 'Ihor',
-# #     "age": 28,
-# #     "sex": 'Male',
-# #     "weigth": 76,
-# #     "heigt": 175,
-# #     "maried ":  False,
-# #     "adress": {
-# #         'city': 'Kyiv',
-# #         'street': 'Lenina',
-# #         'block': 25
-# #     },
-# #     "children": [children_1, children_2]
-# # }
-# #
-# # print(person['children'][1]['name'], 'is children_2 name')
-# #
-# # print(person.keys())
-# # print(person.values())
+tup = (1, 2, 4, 5, 7)
+print(tup[1:])
+
+children_1 = {
+    "name": 'Max',
+    "age": 2,
+    "sex": 'Male',
+}
+
+children_2 = {
+    "name": 'Tom',
+    "age": 12,
+    "sex": 'Male',
+}
+
+person = {
+    "name": 'Ihor',
+    "age": 28,
+    "sex": 'Male',
+    "weigth": 76,
+    "heigt": 175,
+    "maried ":  False,
+    "adress": {
+        'city': 'Kyiv',
+        'street': 'Lenina',
+        'block': 25
+    },
+    "children": [children_1, children_2]
+}
+
+print(person['children'][1]['name'], 'is children_2 name')
+
+print(person.keys())
+print(person.values())
 # #
 # #
 # # visa = {
