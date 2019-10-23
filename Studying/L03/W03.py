@@ -86,12 +86,12 @@
 # s = ''.join(a)
 # print(s)
 
-a = [0, 1]
-
-# for i in range (2,50):
+# a = [0, 1]
+#
+# # for i in range (2,50):
+# #     a.append(a[i - 1]+ a [i - 2])
+# # print(a)
+# i=2
+# while i != 50:
 #     a.append(a[i - 1]+ a [i - 2])
 # print(a)
-i=2
-while i != 50:
-    a.append(a[i - 1]+ a [i - 2])
-print(a)
