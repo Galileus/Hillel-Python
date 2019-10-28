@@ -68,8 +68,6 @@ while True:
         if a or b > 0:
             print(a / b)
             break
-        else:
-            print(a / b)
 
     except Exception as e:
         print('don`t use 0 or string for b !!!')
