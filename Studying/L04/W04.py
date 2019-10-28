@@ -121,19 +121,20 @@ list = [1, 23, 346, 345, 6, 36, 446, 3732, 4, 2, 2, 2, 99999]
 #
 # print(a)
 
-a = int(input('enter the number'))
+a = int(input('enter the number for a: '))
+
+b = int(input('enter the number for b: '))
 
 try:
-    while a != 5:
-        a = int(input('enter the number'))
+    if a or b > 0:
+        print(a / b)
+    else:
+        print(a / b)
 
 except Exception as e:
     print('enter the fucking number!!!')
 
-else:
-    print('what a hell??')
-finally:
-    print('what a fuck??')
+
 
 
 
