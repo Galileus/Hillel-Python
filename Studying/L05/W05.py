@@ -167,7 +167,7 @@ a = [1, 2, 3, 4, 5]
 
 a = [i**2 for i in a]
 
-a = [i for i in range [1,1000]]
+# a = [i for i in range [1,1000]]
 
 print(a)
 

@@ -1,38 +1,71 @@
-#1 за допомогою map перетворити числа в списку на їх дзеркальні (123 -> 321)
+#1. Зробити зі списка новий список елнментами якого будуть добуток всіх чисел масива крім поточного:
+# [1,2,3,4] ---> [24, 12, 8, 6]
+# [4, 5, 10] —-> [5*10, 4*10, 4*5] —> [50, 40, 20]
 
-# list = [12, 34, 56]
+# l = [1, 2, 3, 4]
+# #
+# # # a = [1, 2, 3, 4, 6, 5, 7, 8]
+# #
+# for i in range(len(l)):
+#
+#     print(l[i],'--',i)
 
 
 
-def sq(n, k):
-    return n + k
+# def func (l):
+#
+#     if len(l) == 0:
+#          return 0
+#
+#     return l[0] + sum(l[1:])
+#
+# print(func(l))
 
-a = [2, 3, 4]
-b = [5, 3, 0]
+# list = [1, 9, 10, 22]
+#
+# list = sorted( [str(i) for i in list] , reverse=True)
+# print(''.join(list))
 
-res = map(sq, a, b)
-
-print(list(res))
 
 #
-# list = [2, 3, 4]
-# def func (list):
+# l = [1, 2, 3, 4]
 #
-#     l = []
-#     for i in list:
-#         l.append(i**2)
+# list = l[1:]
 #
-#     return l
+# list =
+# print(list)
+
+
+
+# res = 1
+# for i in range(len(l)):
+# 	res = l[i+1] * res
+# print(res)
+
+
+
+
+# a = [a[i]*a[i-1] for i in range (len(a-1))]
+
+# a = [i for i in range [1,1000]]
+
+# a = [i*2 for i in a]
 #
-# print(func(list))
+# print(a)
 
 
-list = [1, 2, 3, 4, 5, 6, 7, 8]
+# for i in range(len(l)):
+#     print(i)
 
-def func(list):
-    if not list:
-        return 0
 
-    return list[0] + func(list[1:])
 
-print(func(list))
+
+l = [1, 2, 3, 4, 5]
+res = 1
+for i in range(len(l)+1):
+
+	if i != 0:
+		res = i * res
+		print(res)
+
+

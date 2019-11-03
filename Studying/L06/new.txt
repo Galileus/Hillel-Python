@@ -1,2 +1,3 @@
-Ihor, 200, 300
-Roma, 100, 210
+Hilei; Ihor; 175
+Ivanov; Roma; 210
+Lolatch; Taras; 190
