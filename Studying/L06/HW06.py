@@ -57,21 +57,91 @@
 # , мінімальний і середній зріст
 
 
-lst = []
-with open ('new.txt', 'r') as f:
+# lst = []
+# with open ('new.txt', 'r') as f:
+#
+#     for i in f.readlines():
+#         tmp = i[:-1].split('; ')
+#         lst.append(
+#             {
+#                 'Surname': tmp[0],
+#                 'Name': tmp[1],
+#                 'heigt': tmp[2]
+#             }
+#         )
+#
+# print(lst)
 
-    for i in f.readlines():
-        tmp = i[:-1].split('; ')
-        lst.append(
-            {
-                'Surname': tmp[0],
-                'Name': tmp[1],
-                'heigt': tmp[2]
-            }
-        )
-
-print(lst)
-
-
-
+# #
+# while True:
+#     try:
+#         a = input('enter your surname : ')
+#         if a == None or a == '':
+#             print('Invalid input surname. Please try again')
+#             continue
+#     except Exception as e:
+#         print('Invalid input surname. Please try again')
+#         continue
+#
+#     try:
+#         b = input('enter your name : ')
+#         if b == None or b == '':
+#             print('Invalid input name. Please try again')
+#             continue
+#     except Exception as e:
+#         print('Invalid input name. Please try again')
+#         continue
+#
+#     try:
+#         c = int(input('enter your height (cm) : '))
+#     except Exception as e:
+#         print('please enter a number, not less then 100')
+#         continue
+#
+#     if c <= 100 or c > 250:
+#         print('wrong heigt')
+#         continue
+#
+#
+#     with open('new.txt', 'a') as f:
+#         c = str(c)
+#         f.writelines(a + '; ' + b + '; ' + c  +'\n')
+#
+#         i = input('wanna finish ?(y/n) : ')
+#
+#         if i == 'y':
+#             break
+#         else:
+#             continue
+#
+#
+#
+# lst = []
+# nlst = []
+# big = 0
+# smal = 0
+# mid = 0
+# with open ('new.txt', 'r') as f:
+#
+#     for i in f.readlines():
+#         tmp = i[:-1].split('; ')
+#         lst.append(tmp)
+#     print(lst, ' \n')
+#
+#     for i in range(len(lst)):
+#
+#         for j in range(1):
+#             # print(lst[i][2])
+#             mid += int(lst[i][2])
+#
+#             if int(lst[i][2]) > big:
+#                 big = int(lst[i][2])
+#
+#             smal = int(lst[0][2])
+#             if int(lst[i][2]) < smal:
+#                 smal  = int(lst[i][2])
+#
+#     print(big, 'the tallest')
+#     print(smal, 'the smalles')
+#     print(mid/len(lst), 'mid heigt')
 

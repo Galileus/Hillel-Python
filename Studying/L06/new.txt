@@ -1,3 +1,11 @@
 Hilei; Ihor; 175
 Ivanov; Roma; 210
 Lolatch; Taras; 190
+Markiv; Anton; 165
+Vasr; Roma; 231
+Koda; Misha; 183
+Kolatch; Ihor; 235
+Gor; Aragor; 238
+Kolur; Roter; 154
+Kitty; Hello; 102
+
