@@ -3,28 +3,66 @@
 # [1,2,3,4] ---> [24, 12, 8, 6]
 # [4, 5, 10] —-> [5*10, 4*10, 4*5] —> [50, 40, 20]
 
-lst = [4, 5, 10]
-c = 0
-d = 1
-l = []
-for i in range(len(lst)):
-    c = c + 1
-    print(i, c, lst[i])
-
-for i in range(len(lst)):
-    if c !=
-    d = d * lst[i]
-    print(d)
-
-
-
-
+# lst = [1, 2, 3]
+# c = 0
+# l = []
+# for c in range(3):
+#     d = 1
+#     for i in range(len(lst)):
+#         if i != c:
+#             d = lst[i] *d
+#
+#     a = l.append(d)
+#
+# print(lst)
+# print(l)
 
 
 #2 Перевірити чи є строка емейлом: ( необхідно перевірити чи є
 # строка формату xxxxxx@xxx.xx, перша буква не є цифрою, не містить
 # ніяких спецсимволів типу % і ?, а також має довжину першої частини
 # більше ніж 3
+
+
+endProgram = 0;
+while endProgram != 1:
+
+    #Prompt for a new transaction
+    userInput = input("Please enter your mail xxxxxx@xxx.xx ")
+    userInput = userInput.lower()
+
+    #Validate input
+    while userInput in ['%', '!', '?', '']:
+        print ("Invalid input. Please try again.")
+        userInput = input("Please enter your mail xxxxxx@xxx.xx ")
+        userInput = userInput.lower()
+
+
+id_format = [
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ", # or string.ascii_uppercase etc.
+    "abcdefghijklmnopqrstuvwxyz",
+    "abcdefghijklmnopqrstuvwxyz",
+    "0123456789",
+    "0123456789",
+    "0123456789",
+]
+
+def check(input):
+    # check for same length
+    if len(input) != len(id_format):
+        return False
+
+    for test, valid in zip(input, id_format): # itertools.zip_longest can make
+        if test not in valid:                 # the length check unnecessary
+            return False
+
+    return True
+
+check("Abc123") # True
+check("abc123") # False
+
+
+
 
 
 #3 Вивести в циклі всі парні числа до 100, крім 6, 8, 86 якщо число 90
