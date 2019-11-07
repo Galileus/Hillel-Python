@@ -1,15 +1,16 @@
-# class Animal(object):
+class Animal(object):
+
+    def __init__(self, name, weight, height):
+        self.name = name
+        self.height = height
+        self.weight = weight
+
+    def __str__(self):
+        return self.name
+
+a1 = Animal(name='Roma', height=100, weight=200)
 #
-#     def __init__(self, name, weight, height):
-#         self.name = name
-#         self.height = height
-#         self.weight = weight
-#
-#     def __str__(self):
-#         return self.name
-#
-# a1 = Animal(name='Roma', height=100, weight=200)
-#
+print(a1)
 #
 # class Human(object):
 #
@@ -48,7 +49,6 @@
 # print(dog.breed)
 #
 #
-#
 # class Stack(object):
 #
 #     def __init__(self):
@@ -59,7 +59,6 @@
 #             return None
 #         return self.items.pop(-1)
 #
-#
 #     def add(self, value):
 #         self.items.append(value)
 #
@@ -69,16 +68,12 @@
 #
 #     def count(self):
 #         if len(self.items) == 0:
-#             return None
-#
+#             return None#
 #
 # stack = Stack()
-#
 # stack.add('a')
 # stack.add('b')
-# #
 # print(stack.items)
-#
 # print(stack.get())
 # print(stack.get())
 
@@ -115,27 +110,27 @@
 # person = People(100)
 # print(person.get_age())
 
-
-class SuperMarket(object):
-
-    def __init__(self, lenght, width):
-        self.lenght = lenght
-        self.width = width
-
-    def sq(self):
-        return self.lenght * self.width
-
-    def is_valid(self):
-        if self.sq() > 100:
-            return True
-
-        return False
-
-class Shop(SuperMarket):
-
-    def is_valid(self):
-
-
-market = Market()
-
-print(market.sq(2, 4))
+#
+# class SuperMarket(object):
+#
+#     def __init__(self, lenght, width):
+#         self.lenght = lenght
+#         self.width = width
+#
+#     def sq(self):
+#         return self.lenght * self.width
+#
+#     def is_valid(self):
+#         if self.sq() > 100:
+#             return True
+#
+#         return False
+#
+# class Shop(SuperMarket):
+#
+#     def is_valid(self):
+#
+#
+# market = Market()
+#
+# print(market.sq(2, 4))
