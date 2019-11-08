@@ -18,51 +18,50 @@
 # print(l)
 
 
-#2 Перевірити чи є строка емейлом: ( необхідно перевірити чи є
+# 2 Перевірити чи є строка емейлом: ( необхідно перевірити чи є
 # строка формату xxxxxx@xxx.xx, перша буква не є цифрою, не містить
 # ніяких спецсимволів типу % і ?, а також має довжину першої частини
 # більше ніж 3
 
-
-endProgram = 0;
-while endProgram != 1:
-
-    #Prompt for a new transaction
-    userInput = input("Please enter your mail xxxxxx@xxx.xx ")
-    userInput = userInput.lower()
-
-    #Validate input
-    while userInput in ['%', '!', '?', '']:
-        print ("Invalid input. Please try again.")
-        userInput = input("Please enter your mail xxxxxx@xxx.xx ")
-        userInput = userInput.lower()
-
-
-id_format = [
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZ", # or string.ascii_uppercase etc.
-    "abcdefghijklmnopqrstuvwxyz",
-    "abcdefghijklmnopqrstuvwxyz",
-    "0123456789",
-    "0123456789",
-    "0123456789",
-]
-
-def check(input):
-    # check for same length
-    if len(input) != len(id_format):
-        return False
-
-    for test, valid in zip(input, id_format): # itertools.zip_longest can make
-        if test not in valid:                 # the length check unnecessary
-            return False
-
-    return True
-
-check("Abc123") # True
-check("abc123") # False
-
-
-
+# email = input('enter ypur email xxxxxx@xxx.xx ')
+#
+# while email.count('@') != 1 or email.count('@') == 0:
+#     print('incorrect @ count')
+#     email = input('enter your email xxxxxx@xxx.xx again ')
+#
+# [name, domain] = email.split('@')
+#
+# if len(name) < 3:
+#     print ('name part is too short')
+#
+# if len(name) > 256:
+#     print ('domain part is too long')
+#
+# while name[0].isdigit() == True:
+#     print('first sumbol cant be a number')
+#     email = input('enter your email xxxxxx@xxx.xx again ')
+#
+# if len(domain) < 3:
+#     print ('domain part is too short')
+# if len(domain) > 256:
+#     print ('domain part is too long')
+#
+# while domain.count('.') == 0:
+#     print('no dot in domain')
+#     email = input('enter your email xxxxxx@xxx.xx again ')
+#
+# correctchrlist = list(range(ord('a'),ord('z')+1))
+# incorrectchrlist = [ord('!'), ord(','), ord(':'), ord(':'), ord('?'), ord('%')]
+#
+# for k in name:
+#     if k == ' ':
+#         print('name cant contain space, try again')
+#     else:
+#         for n in k:
+#             if ord(n) in incorrectchrlist:
+#                 print('name cant contain sumbols  % і ? , try again')
+#
+# print('your email is ', email)
 
 
 #3 Вивести в циклі всі парні числа до 100, крім 6, 8, 86 якщо число 90
@@ -82,8 +81,29 @@ check("abc123") # False
 #4 Скільки існує комбінацій пароля 4 символів, якщо відомо що
 # друга цифра 4, 5 або 7, перша не 0, третя менша 6 а четверта більша 7
 
-
-
+# c1 = 0
+# c2 = 0
+# c3 = 0
+# c4 = 0
+# for i in range(10):
+#     if i != 0:
+#         c1=c1+1
+#         for j in range(10):
+#             if j == 4 or j == 5 or j == 7:
+#                 c2=c2+1
+#                 for k in range(10):
+#                     if k < 6:
+#                         c3=c3+1
+#                         for l in range(10):
+#                             if l > 7:
+#                                 c4=c4+1
+#
+#
+# print(c1, 'c1')
+# print(c2, 'c2')
+# print(c3, 'c3')
+# print(c4, 'c4')
+# print('there are ', c1*c2*c3*c4 , 'combinations of the pass')
 
 
 
