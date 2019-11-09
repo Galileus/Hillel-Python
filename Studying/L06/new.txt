@@ -8,4 +8,5 @@ Kolatch; Ihor; 235
 Gor; Aragor; 238
 Kolur; Roter; 154
 Kitty; Hello; 102
+Mitty; Mollo; 245
 

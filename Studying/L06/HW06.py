@@ -188,33 +188,60 @@
 #             continue
 #
 #
-#
-# lst = []
-# nlst = []
-# big = 0
-# smal = 0
-# mid = 0
-# with open ('new.txt', 'r') as f:
-#
-#     for i in f.readlines():
-#         tmp = i[:-1].split('; ')
-#         lst.append(tmp)
-#     print(lst, ' \n')
-#
-#     for i in range(len(lst)):
-#
-#         for j in range(1):
-#             # print(lst[i][2])
-#             mid += int(lst[i][2])
-#
-#             if int(lst[i][2]) > big:
-#                 big = int(lst[i][2])
-#
-#             smal = int(lst[0][2])
-#             if int(lst[i][2]) < smal:
-#                 smal  = int(lst[i][2])
-#
-#     print(big, 'the tallest')
-#     print(smal, 'the smalles')
-#     print(mid/len(lst), 'mid heigt')
+# #
+lst = []
 
+with open ('new.txt', 'r') as f:
+
+    for i in f.readlines():
+        tmp = i[:-1].split('; ')
+        lst.append(tmp)
+    print(lst, ' \n')
+#
+# def mid(lst, md=0):
+#     for i in range(len(lst)):
+#         for j in range(len(lst[i])):
+#             if j == 2:
+#                 # print(lst[i][j])
+#                 md += int(lst[i][2])
+#                 # print(m)
+#
+#
+#     return md/len(lst)
+#
+# print(mid(lst), 'middle height')
+#
+#
+# def max(lst, mx=0):
+#     for i in range(len(lst)):
+#         for j in range(len(lst[i])):
+#             if j == 2:
+#                 # print(lst[i][j])
+#                 if int(lst[i][2]) > mx:
+#                     mx = int(lst[i][2])
+#     return mx
+#
+# print(max(lst), 'max height')
+
+def min(lst, mn=0):
+    for i in range(len(lst)):
+        for j in range(len(lst[i])):
+
+            if j == 2:
+                mn = int(lst[0][2])
+                # print(lst[i][j])
+                # print(int(lst[0][2]), '0')
+
+
+                if int(lst[i][j]) < mn:
+                    mn = int(lst[i][j])
+                    print(mn, 'mn')
+
+                # print(mn, 'mininimum')
+                return mn
+
+
+
+
+min(lst)
+# print(min(lst))
