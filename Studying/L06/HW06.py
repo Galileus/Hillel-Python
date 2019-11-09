@@ -223,25 +223,14 @@ with open ('new.txt', 'r') as f:
 #
 # print(max(lst), 'max height')
 
-def min(lst, mn=0):
+def mn(lst):
+    l = []
     for i in range(len(lst)):
         for j in range(len(lst[i])):
-
             if j == 2:
-                mn = int(lst[0][2])
-                # print(lst[i][j])
-                # print(int(lst[0][2]), '0')
+                # print(int(lst[i][j]))
+                l.append(int(lst[i][j]))
 
+    return min(l)
+print(mn(lst))
 
-                if int(lst[i][j]) < mn:
-                    mn = int(lst[i][j])
-                    print(mn, 'mn')
-
-                # print(mn, 'mininimum')
-                return mn
-
-
-
-
-min(lst)
-# print(min(lst))
