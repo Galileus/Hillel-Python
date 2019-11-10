@@ -2,6 +2,7 @@ import telebot
 
 bot = telebot.TeleBot("975958816:AAGLi7yZgMErf3EwgaapEwSkBgufKurlQnk")
 
+
 name = '';
 surname = '';
 age = 0;
