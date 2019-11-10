@@ -1,71 +1,46 @@
-#1. Зробити зі списка новий список елнментами якого будуть добуток всіх чисел масива крім поточного:
-# [1,2,3,4] ---> [24, 12, 8, 6]
-# [4, 5, 10] —-> [5*10, 4*10, 4*5] —> [50, 40, 20]
-
-# l = [1, 2, 3, 4]
-# #
-# # # a = [1, 2, 3, 4, 6, 5, 7, 8]
-# #
-# for i in range(len(l)):
+# class Animal(object):
 #
-#     print(l[i],'--',i)
-
-
-
-# def func (l):
+#     def __init__(self ,height, weight, name):
+#         self.height = height
+#         self.weight = weight
+#         self.name = name
 #
-#     if len(l) == 0:
-#          return 0
+#     def __str__(self):
+#         return self.name
 #
-#     return l[0] + sum(l[1:])
 #
-# print(func(l))
-
-# list = [1, 9, 10, 22]
+# a1 = Animal(height = 155, weight = 320, name = 'Ihor')
 #
-# list = sorted( [str(i) for i in list] , reverse=True)
-# print(''.join(list))
+# print(a1)
 
 
-#
-# l = [1, 2, 3, 4]
-#
-# list = l[1:]
-#
-# list =
-# print(list)
+class Human(object):
+
+    def __init__(self, name, age, height):
+        self.name = 'Name'
+        self.age = "age"
+        self.height = 'height'
+
+        self.sex = 'man'
+
+class Student(Human):
+
+    def __init__(self, status, form):
+        self.status = status
+        self.form = form
 
 
+p1 = Human(name = 'Roma', age = 25, height = 178)
+p2 = Human(name = 'Kostia', age = 29, height = 183)
 
-# res = 1
-# for i in range(len(l)):
-# 	res = l[i+1] * res
-# print(res)
+print(p1.__dict__)
+print(p2.__dict__)
 
+s1 = Student(status='active', form='day')
 
-
-
-# a = [a[i]*a[i-1] for i in range (len(a-1))]
-
-# a = [i for i in range [1,1000]]
-
-# a = [i*2 for i in a]
-#
-# print(a)
-
-
-# for i in range(len(l)):
-#     print(i)
+print(s1.__dict__)
 
 
 
-
-l = [1, 2, 3, 4, 5]
-res = 1
-for i in range(len(l)+1):
-
-	if i != 0:
-		res = i * res
-		print(res)
 
 
