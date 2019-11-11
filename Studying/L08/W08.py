@@ -16,6 +16,7 @@
 #
 # d = A(-10)
 # d.a = 11
+
 #
 # print(d.a)
 
@@ -42,14 +43,12 @@
 #                 self.__armour = value
 #
 #     health = property(get_health, set_health)
-#     armour = property(get_armour, set_armour)
-#
-# # d = A(-10)
-# # d.a = 11
-# #
-# # print(d.a)
-#
+#     armour = property(get_armour, set_armour)#
+
 # unit = Unit(50, 70)
+
+# unit.health = 40
+# unit.armour = 95
 #
 # print(unit.health)
 # print(unit.armour)
