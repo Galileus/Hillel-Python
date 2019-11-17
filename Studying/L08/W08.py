@@ -90,32 +90,36 @@
 
 # class A:
 #
-#     def __init__(self,limit):
-#
-#         self.limit = limit
+#     def __init__(self, lim):
+#         self.lim = lim
 #         self.count = 0
 #
 #     def __iter__(self):
 #         return self
 #
-#     def gen(n = 10):
-#         for i in range(n):
-#             yield i
-#     a = gen(3)
-#
 #     def __next__(self):
-#         if self.count < self.limit:
-#             self.count += 1
+#         if self.count < self.lim:
+#             self.count +=1
 #             return self.count
 #         else:
 #             raise StopIteration
 #
+# a = A(6)
 #
-# a = A(2)
+# for i in a:
+#     print(i)
+
+
+
+
+# def gen(n = 10):
+#     for i in range(n):
+#         yield i
 #
-# # print(next(a))
-# # print(next(a))
-# # print(next(a))
+# a = gen(3)
+#
+# for i in a:
+#     print(i)
 
 #__init__.py
 
@@ -140,9 +144,38 @@
 #
 #
 #
-# a = A()
+# a = A(100)
 #
-# print(next(1))
+
+## print(next(a))
+## print(next(a))
+## print(next(a))
+## print(next(a))
+
+
+# for i in a:
+#     print(i)
+
+
+#################################
+#iterator - file in the same folder, A - class in file
+
+# from iterator import A
+#
+# a = A(15)
+#
+# for i in a:
+#     print(i)
+
+################################
+#iterator - file in the folder modules, I - class in file
+
+# from modules.iterator import I
+#
+# a = I(8)
+#
+# for i in a:
+#      print(i)
 
 
 class A:

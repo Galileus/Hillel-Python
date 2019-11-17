@@ -1,16 +1,16 @@
-class Animal(object):
-
-    def __init__(self, name, weight, height):
-        self.name = name
-        self.height = height
-        self.weight = weight
-
-    def __str__(self):
-        return self.name
-
-a1 = Animal(name='Roma', height=100, weight=200)
+# class Animal(object):
 #
-print(a1)
+#     def __init__(self, name, weight, height):
+#         self.name = name
+#         self.height = height
+#         self.weight = weight
+#
+#     def __str__(self):
+#         return self.name
+#
+# a1 = Animal(name='Roma', height=100, weight=200)
+# #
+# print(a1)
 #
 # class Human(object):
 #
