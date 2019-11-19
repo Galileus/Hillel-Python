@@ -3,25 +3,36 @@ import time
 
 class Request():
 
-    def t1(self):
-        self.t_1 = time.time()
-        return self.t_1
 
-    def get_ip(self):
-        self.r = requests.get("https://ramziv.com/ip").text
-        return self.r
+    def __init__(self):
+        self.__sourse = 'https://ramziv.com/ip'
+        self.__t_1 = time.time()
 
-    def dif(self):
-        self.t_2 = time.time()
-        return self.t_2 - self.t_1
+    def get_url(self):
+        return self.__sourse
 
-    t1 = property(t1)
-    t2 = property(dif)
-    g = property(get_ip)
+    def set_url(self, url):
+        self.__sourse = url
+
+    def get_req(self):
+        self.r = requests.get(self.__sourse)
+        return (self.r.content)
+
+        # return (self.r.json())
+
+    url = property(get_url, set_url)
+    req = property(get_req)
+
+
+
 
 r = Request()
 
-print(r.t1)
-print(r.g)
-print(r.t2)
+r.url = 'https://2ip.ua/ru/'
+
+print(r.req)
+
+
+
+
 
