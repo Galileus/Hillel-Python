@@ -37,7 +37,8 @@ class Facade(object):
         self.printer.print(self.paper,text)
 
     def load(self,q):
-        self.paper.load(self,q)
+        self.paper.load(q)
+        print(self.paper.count)
 
 
 
@@ -46,14 +47,7 @@ f = Facade()
 f.write('Hello world')
 f.write('How are  you ?')
 f.write('I`m fine')
-f.load()
-
-
-
-
-
-# paper = Paper(3)
-#
-# print(paper.get_count())
-# print(paper.draw(124))
-# print(paper.get_count())
+f.load(3)
+f.write('Hfgsdfg')
+f.write('Hffddfg')
+print(f.paper.count)
